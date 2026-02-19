@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.navbar{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(35, 34, 34, 0.607);
+    color: white;
+    padding: 15px;
+    box-shadow: 0 2px 10px;
+    z-index: 1000;
+}
+.nav-links{
+   display: flex;
+   list-style: none;
+
+}
+.nav-links li{
+    margin: 0 10px;
+    transition: transform 0.3;
+    font-size: 18px;
+  
+}
+.nav-links li:hover{
+    transform: scale(1.1);
+    color: rgb(74, 30, 222);;
+}
+.dropdown-parent{
+    position: relative;
+}
+.dropdown-menu {
+    display: none;        
+    position: absolute;   
+    list-style: none;
+    padding: 10px;
+}
+
+.dropdown-parent:hover .dropdown-menu {
+    display: block;
+}
+a{
+    text-decoration: none;
+    color: white;
+    padding: 8px 10px;
+    font-size: 16px;
+}
+
+a:hover{
+    color: rgb(74, 30, 222);;
+}
+
+
+.hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: #dadae1;
+    position: relative;
+    overflow: hidden;
+}
+.btn{
+    padding: 10px 20px;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+
+}
+.btn:hover{
+    background: rgb(74, 30, 222);
+    transform: translateY(-3px);
+    font-size: medium;
+    margin-top: 5px;
+}
+
+
+
+
+@keyframes moveicon {
+    0% {
+        transform: rotate(0deg) translateY(0);
+    }
+    100% {
+        transform: rotate(360deg) translateY(-30px);
+    }
+}
+
+.icon {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: rgb(24, 125, 110);
+    border-radius: 25px;
+    top: 0px;
+    right: 300px;
+    animation: moveicon 4s infinite alternate ease-in-out;
+}
+
+
+
